@@ -24,3 +24,25 @@ function candidateRankingFour() {
   }
 }
 candidateRankingFour();
+
+// Etape 5 : Afficher dans la console l’âge moyen des candidates
+
+// const ages = Array.from();
+
+// console.log(ages);
+
+// const moyenneAge = ages / dataLength;
+// console.log(moyenneAge);
+candidatesAges = [];
+
+for (let i = 0; i < data.length; i++) {
+  candidatesAges.push(data[i].age);
+}
+
+const sumWithInitial = candidatesAges.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
+
+const moyenneAge = sumWithInitial / dataLength;
+
+console.log(moyenneAge);

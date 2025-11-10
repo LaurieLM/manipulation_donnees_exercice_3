@@ -14,3 +14,13 @@ console.log(firstObject);
 // Etape 3 : Afficher dans la console le nombre d’objets contenu dans le tableau
 const dataLength = data.length;
 console.log(dataLength);
+
+// Etape 4 : Afficher dans la console, les informations de la candidate arrivée au 4e rang
+function candidateRankingFour() {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].ranking === 4) {
+      console.log(data[i]);
+    }
+  }
+}
+candidateRankingFour();

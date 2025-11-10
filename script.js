@@ -3,4 +3,10 @@ const filepath = "data.json";
 
 const content = fs.readFileSync(filepath, { encoding: "utf8", flag: "r" });
 const data = JSON.parse(content);
-console.log(data);
+
+// Etape 1 : Vérifier que data à bien un type object
+console.log(typeof data);
+
+// Etape 2 : Affiche dans la console, le premier objet du tableau d’objets
+const firstObject = data[0];
+console.log(firstObject);
